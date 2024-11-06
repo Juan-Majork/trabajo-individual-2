@@ -49,4 +49,17 @@ public class loadLevel : MonoBehaviour
             SceneManager.LoadScene("level 1");
         }
     }
+
+    public void volverMenu()
+    {
+        reproduceMusica.Instance.musicaJuego();
+        pointsManager.instance.playerPoints = 0;
+        pointsManager.instance.pointsValue = 0;
+        SceneManager.LoadScene("menu");
+    }
+
+    public void salir()
+    {
+        Application.Quit();
+    }
 }
